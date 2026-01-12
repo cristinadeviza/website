@@ -48,3 +48,20 @@ if (form) {
       savedLang === "de" ? "../de/index.html" : "../ro/index.html";
   }
 })();
+
+// Toggle meniul la click pe hamburger
+const menuBtn = document.getElementById("menuBtn");
+const siteNav = document.getElementById("siteNav");
+
+menuBtn.addEventListener("click", () => {
+  siteNav.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", siteNav.classList.contains("open"));
+});
+
+// Închide meniul la click pe link
+siteNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    siteNav.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+  });
+});
