@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
@@ -28,6 +28,20 @@
     />
 
     <link rel="stylesheet" href="../css/style1.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KQXSK2DVP9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KQXSK2DVP9");
+    </script>
   </head>
 
   <body>
@@ -328,7 +342,9 @@
             <article class="work-item">
               <div
                 class="work-thumb"
-                style="background-image: url('../assets/projekt01.png')"
+                style="
+                  background-image: url(&quot;../assets/projekt01.png&quot;);
+                "
               ></div>
               <div class="work-body">
                 <h3>Landing Page – Huddle</h3>
@@ -359,7 +375,9 @@
             <article class="work-item">
               <div
                 class="work-thumb"
-                style="background-image: url('../assets/projekt02.png')"
+                style="
+                  background-image: url(&quot;../assets/projekt02.png&quot;);
+                "
               ></div>
               <div class="work-body">
                 <h3>Portfolio – Personal</h3>
@@ -391,7 +409,9 @@
             <article class="work-item">
               <div
                 class="work-thumb"
-                style="background-image: url('../assets/projekt03.png')"
+                style="
+                  background-image: url(&quot;../assets/projekt03.png&quot;);
+                "
               ></div>
               <div class="work-body">
                 <h3>Website – Business</h3>
